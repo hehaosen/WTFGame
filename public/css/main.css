@@ -1,0 +1,36 @@
+.world{width: 1200px; height: 700px; border:5px #666666 solid; position: fixed;top: 0; left:0}
+.playName{font-weight: bold;z-index: 10}
+.playPic{width: 33px; height: 31px; background:url("../images/black.png") no-repeat;z-index: 9 }
+.weapon{z-index: 0;}
+.weapon.doknief.left{
+    -webkit-animation:kniefRotateLeft 0.25s infinite alternate;
+    -webkit-transform-origin:100% 50%;
+}
+.weapon.doknief.top{
+    -webkit-animation:kniefRotateTop 0.25s infinite alternate;
+    -webkit-transform-origin:100% 50%;
+}
+.weapon.doknief.bottom{
+    -webkit-animation:kniefRotateBottom 0.25s infinite alternate;
+    -webkit-transform-origin:50% 60%;
+}
+.weapon.doknief.right{
+    -webkit-animation:kniefRotateRight 0.25s infinite alternate;
+    -webkit-transform-origin:50% 80%;
+}
+@-webkit-keyframes kniefRotateLeft {
+    from {-webkit-transform:rotate(360deg);}
+    to {-webkit-transform:rotate(300deg);}
+}
+@-webkit-keyframes kniefRotateTop {
+    from {-webkit-transform:rotate(60deg)}
+    to {-webkit-transform:rotate(0deg)}
+}
+@-webkit-keyframes kniefRotateBottom {
+    from {-webkit-transform:rotate(0deg) scale(-1, -1);}
+    to {-webkit-transform:rotate(60deg) scale(-1, -1);}
+}
+@-webkit-keyframes kniefRotateRight {
+    from {-webkit-transform: rotate(0deg) scale(-1, 1);}
+    to {-webkit-transform:rotate(60deg) scale(-1, 1);}
+}
